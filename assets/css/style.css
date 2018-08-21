@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+    background-color: black;
+    border: double 3px rgb(286, 325, 0);
+    font: white;
+    color: white;
+    font-family: 'vast shadow';
+}
+#gameBoard {
+    margin: 0 auto;
+    width: 80%;
+    background-image: linear-gradient(to right, grey white);
+}
+.playerCard {
+    border: solid 1px black;
+    display: inline-block;
+    padding: 8%;
+}
+#gallery {
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(to right, grey white);
+    font-family: 'Righteous';
+}
+
+#heroOne {
+    background-image: url("../images/Hero1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aquamarine;
+}
+#heroTwo {
+    background-image: url("../images/Hero2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: coral;
+}
+#heroThree {
+    background-image: url("../images/Hero3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: cornflowerblue;
+}
+#heroFour {
+    background-image: url("../images/Hero4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gold;
+}
