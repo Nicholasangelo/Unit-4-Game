@@ -30,6 +30,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: aquamarine;
+    visibility: visible;
 }
 #heroTwo {
     background-image: url("../images/Hero2.jpg");
@@ -37,6 +38,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: coral;
+    visibility: visible;
 }
 #heroThree {
     background-image: url("../images/Hero3.jpg");
@@ -44,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: cornflowerblue;
+    visibility: visible;
 }
 #heroFour {
     background-image: url("../images/Hero4.jpg");
@@ -51,4 +54,23 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: gold;
+    visibility: visible;
 }
+p {
+    position: relative;
+    bottom: 6em;
+}
+.hp {
+    position: relative;
+    top: 5.3em;
+}
+#fightInfo {
+    float:left;
+}
+#enemyGallery {
+    text-align: center;
+}
+/* #currentEnemy {
+    position: relative;
+    left: 20%; */
+/* } */

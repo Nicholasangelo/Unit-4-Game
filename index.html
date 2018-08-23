@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Righteous|Vast+Shadow" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" type="reset" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">   
     
@@ -23,27 +25,29 @@
             <span>Choose Your Hero</span>
         </div>
 
-        <box class="playerCard" id="heroOne">
+        <div id="userChoices">
+        <div class="playerCard" id="heroOne">
             <p>Hero One</p>
-            <p id="heroOneHp"></p>
-        </box>
-        <box class="playerCard" id="heroTwo">
+            <p id="heroOneHp" class="hp"></p>
+        </div>
+        <div class="playerCard" id="heroTwo">
             <p>Hero Two</p>
-            <p id="heroTwoHp"></p>
-        </box>
-        <box class="playerCard" id="heroThree">
+            <p id="heroTwoHp" class="hp"></p>
+        </div>
+        <div class="playerCard" id="heroThree">
             <p>Hero Three</p>
-            <p id="heroThreeHp"></p>
-        </box>
-        <box class="playerCard" id="heroFour">
+            <p id="heroThreeHp" class="hp"></p>
+        </div>
+        <div class="playerCard" id="heroFour">
             <p>Hero Four</p>
-            <p id="heroFourHp"></p>
-        </box>
+            <p id="heroFourHp" class="hp"></p>
+        </div>
+        </div>
 
         <div id="yourHero"></div>
-        <div id="fightInfo"></div>
-        <div id="currentEnemy"></div>
-        <div id="enemyGallery"></div>
+        <div id="fightInfo">Battle Stats</div>
+        <!-- <div id="currentEnemy">Current Enemy</div> -->
+        <div id="enemyGallery">Choose Your Enemy</div>
         
 
 
