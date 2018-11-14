@@ -1,7 +1,7 @@
-heros = [];
+heroes = [];
 var userChoice;
 
-var heros = [
+var heroes = [
     heroOne = {
         name: "Hero one",
         weapon: "Laser",
@@ -31,7 +31,6 @@ var heros = [
         CounterAp: "8",
     }]
 
-    var userChoice;
     var chosenEnemy;
     var enemyGallery = [];
 
@@ -44,11 +43,24 @@ var heros = [
         $("#heroThreeHp").append(heroThree.HP);
         $("#heroFourHp").append(heroFour.HP);
 
+        $("#rivalOne").hide();
+        $("#rivalTwo").hide();
+        $("#rivalThree").hide();
+        $("#rivalFour").hide();
         
 // create click event in which user chooses one object from an array
-    $(".playerCard").click(function () {
-        userChoice=this;
-        console.log(userChoice);
+    $("#heroOne").click(function () {
+        var userChoice = heroOne.name;
+        console.log("You've selected: " + userChoice);
+        $("#chooseHero").hide();
+        $("#chooseRival").attr("visibility", "visible");
+        $("#heroTwo").hide();
+        $("#heroThree").hide();
+        $("#heroFour").hide();
+        
+        $("#rivalTwo").show();
+        $("#rivalThree").show();
+        $("#rivalFour").show();
         
     
     });

@@ -70,6 +70,41 @@ p {
 #enemyGallery {
     text-align: center;
 }
+.rivalCard {
+    border: solid 1px black;
+    display: inline-block;
+    padding: 8%;
+    background-color: slategrey
+}
+#rivalOne {
+    background-image: url("../images/Hero1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+}
+#rivalTwo {
+    background-image: url("../images/Hero2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+}
+#rivalThree {
+    background-image: url("../images/Hero3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+}
+#rivalFour {
+    background-image: url("../images/Hero4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: visible;
+}
+
 /* #currentEnemy {
     position: relative;
     left: 20%; */
