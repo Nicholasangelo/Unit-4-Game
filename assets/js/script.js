@@ -31,7 +31,7 @@ var heroes = [
         CounterAp: "8",
     }]
 
-    var chosenEnemy;
+    var chosenRival;
     var enemyGallery = [];
 
 
@@ -48,7 +48,7 @@ var heroes = [
         $("#rivalThree").hide();
         $("#rivalFour").hide();
         
-// create click event in which user chooses one object from an array
+// create click event for USER HERO CHOICE
     $("#heroOne").click(function () {
         var userChoice = heroOne.name;
         console.log("You've selected: " + userChoice);
@@ -61,8 +61,74 @@ var heroes = [
         $("#rivalTwo").show();
         $("#rivalThree").show();
         $("#rivalFour").show();
+    });
+    $("#heroTwo").click(function () {
+        var userChoice = heroOne.name;
+        console.log("You've selected: " + userChoice);
+        $("#chooseHero").hide();
+        $("#chooseRival").attr("visibility", "visible");
+        $("#heroOne").hide();
+        $("#heroThree").hide();
+        $("#heroFour").hide();
         
-    
+        $("#rivalOne").show();
+        $("#rivalThree").show();
+        $("#rivalFour").show();
+    });
+    $("#heroThree").click(function () {
+        var userChoice = heroOne.name;
+        console.log("You've selected: " + userChoice);
+        $("#chooseHero").hide();
+        $("#chooseRival").attr("visibility", "visible");
+        $("#heroTwo").hide();
+        $("#heroOne").hide();
+        $("#heroFour").hide();
+        
+        $("#rivalTwo").show();
+        $("#rivalOne").show();
+        $("#rivalFour").show();
+    });
+    $("#heroFour").click(function () {
+        var userChoice = heroOne.name;
+        console.log("You've selected: " + userChoice);
+        $("#chooseHero").hide();
+        $("#chooseRival").attr("visibility", "visible");
+        $("#heroTwo").hide();
+        $("#heroThree").hide();
+        $("#heroOne").hide();
+        
+        $("#rivalTwo").show();
+        $("#rivalThree").show();
+        $("#rivalOne").show();
+    });
+    // CLICK EVENTS FOR RIVAL CHOICE
+    $("#rivalOne").click(function () {
+        var chosenRival = rivalOne.name;
+        console.log("You've selected: " + chosenRival);
+        $("#rivalTwo").hide();
+        $("#rivalThree").hide();
+        $("#rivalFour").hide();
+    });
+    $("#rivalTwo").click(function () {
+        var chosenRival = rivalOne.name;
+        console.log("You've selected: " + chosenRival);
+        $("#rivalOne").hide();
+        $("#rivalThree").hide();
+        $("#rivalFour").hide();
+    });
+    $("#rivalThree").click(function () {
+        var chosenRival = rivalOne.name;
+        console.log("You've selected: " + chosenRival);
+        $("#rivalTwo").hide();
+        $("#rivalOne").hide();
+        $("#rivalFour").hide();
+    });
+    $("#rivalFour").click(function () {
+        var chosenRival = rivalOne.name;
+        console.log("You've selected: " + chosenRival);
+        $("#rivalTwo").hide();
+        $("#rivalThree").hide();
+        $("#rivalOne").hide();
     });
 // });
 

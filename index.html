@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Righteous|Vast+Shadow" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" type="reset" href="assets/css/reset.css">
@@ -20,57 +22,65 @@
         <h3>A space related RPG adventure</h3>
     </header>
 
-    <section id="gameBoard">
-        <div id="gallery">
+    <section class="container" id="gameBoard">
+        <div class="row" id="gallery">
             <span id="chooseHero">Choose Your Hero</span>
+
+
+            <div class="col-sm-12" id="userChoices">
+                <div id="heroOne" class="playerCard">
+                    <p>Hero One</p>
+                    <p id="heroOneHp" class="hp"></p>
+                </div>
+                <div id="heroTwo" class="playerCard">
+                    <p>Hero Two</p>
+                    <p id="heroTwoHp" class="hp"></p>
+                </div>
+                <div id="heroThree" class="playerCard">
+                    <p>Hero Three</p>
+                    <p id="heroThreeHp" class="hp"></p>
+                </div>
+                <div id="heroFour" class="playerCard">
+                    <p>Hero Four</p>
+                    <p id="heroFourHp" class="hp"></p>
+                </div>
+            </div>
         </div>
 
-        <div id="userChoices">
-            <div id="heroOne" class="playerCard">
-                <p>Hero One</p>
-                <p id="heroOneHp" class="hp"></p>
-            </div>
-            <div id="heroTwo" class="playerCard">
-                <p>Hero Two</p>
-                <p id="heroTwoHp" class="hp"></p>
-            </div>
-            <div id="heroThree" class="playerCard">
-                <p>Hero Three</p>
-                <p id="heroThreeHp" class="hp"></p>
-            </div>
-            <div id="heroFour" class="playerCard">
-                <p>Hero Four</p>
-                <p id="heroFourHp" class="hp"></p>
-            </div>
-        </div>
-
-        <div id="yourHero"></div>
-        <div id="fightInfo">Battle Stats</div>
+        <!-- <div id="yourHero"></div>
+        <div id="fightInfo">
+            <span>Battle Stats</span>
+            <p>Hero HP: </p>
+            <p>Attack: </p>
+        </div> -->
         <!-- <div id="currentEnemy">Current Enemy</div> -->
-        
-        <div id="rivals">
-            <div id="enemyGallery">Choose Your Enemy</div>
 
-            <div id="rivalChoices">
-                <div id="rivalOne" class="rivalCard">
-                    <p>Rival One</p>
-                    <p id="rivalOneHp" class="hp"></p>
-                </div>
-                <div id="rivalTwo" class="rivalCard">
-                    <p>Rival Two</p>
-                    <p id="rivalTwoHp" class="hp"></p>
-                </div>
-                <div id="rivalThree" class="rivalCard">
-                    <p>Rival Three</p>
-                    <p id="rivalThreeHp" class="hp"></p>
-                </div>
-                <div id="rivalFour" class="rivalCard">
-                    <p>Rival Four</p>
-                    <p id="rivalFourHp" class="hp"></p>
+        <div class="row" id="rivals">
+            <div id="enemyGallery">
+                <span>Choose Your Enemy</span>
+
+
+                <div class="row justify-content-end">
+                    <div class="col-sm-2">
+                        <div class="battleStats"></div>
+                    </div>
+                    <div class="col-sm-12" id="rivalChoices">
+                        <div id="rivalOne" class="rivalCard">
+                            <p id="rivalOneHp" class="hp"></p>
+                        </div>
+                        <div id="rivalTwo" class="rivalCard">
+                            <p id="rivalTwoHp" class="hp"></p>
+                        </div>
+                        <div id="rivalThree" class="rivalCard">
+                            <p id="rivalThreeHp" class="hp"></p>
+                        </div>
+                        <div id="rivalFour" class="rivalCard">
+                            <p id="rivalFourHp" class="hp"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
 
 
 
